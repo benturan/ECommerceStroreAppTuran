@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bilgeadam.ecommercestroreappturan">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:node="remove" />
+    <uses-permission
+        android:name="com.bilgeadam.ecommercestroreappturan.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.abhiandroid.smartnews.permission.C2D_MESSAGE" />
+
+    <application
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        tools:replace="android:icon">
+        <activity android:name=".Activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.Activities.MainActivity" />
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.Activities.Login"/>
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.Activities.SignUp" />
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.Activities.ForgotPassword" />
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.Activities.OptionalImageFullView" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.PaymentIntegrationMethods.PayPalActivityPayment" />
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.PaymentIntegrationMethods.StripePaymentIntegration" />
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.PaymentIntegrationMethods.OrderConfirmed" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <!-- Firebase Notifications -->
+        <service android:name="com.bilgeadam.ecommercestroreappturan.FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.bilgeadam.ecommercestroreappturan.FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ./Firebase Notifications -->
+
+        <activity android:name="com.bilgeadam.ecommercestroreappturan.Activities.AccountVerification"></activity>
+    </application>
+
+
+</manifest>

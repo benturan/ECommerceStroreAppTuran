@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ECommerceStoreApp</string>
+    <string name="secure_payment_text"><![CDATA[Guvenli Odeme <br />100% Yetkili Ürünler]]></string>
+    <string name="emailId">info@bilgeadam.com</string>
+    <string name="err_msg_email">Lutfen geçerli bir email adresiniz giriniz</string>
+    <string name="contactNo">0123456789</string>
+    <string name="targetProductImageWidth">300</string>
+    <string name="targetProductImageHeight">250</string>
+    <string name="targetProductImageWidth1">100</string>
+    <string name="cartImageWidth">100</string>
+    <string name="fullImageWidth">500</string>
+</resources>

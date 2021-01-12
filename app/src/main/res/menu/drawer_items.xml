@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Hesabım">
+
+
+        <menu>
+            <item
+                android:id="@+id/myProfile"
+                android:icon="@drawable/profile_icon"
+                android:title="Profilim" />
+            <item
+                android:id="@+id/myWishList"
+                android:icon="@drawable/favorited_icon"
+                android:title="Favorilerim" />
+            <item
+                android:id="@+id/myCart"
+                android:icon="@drawable/menu_cart_icon"
+                android:title="Sepetim" />
+            <item
+                android:id="@+id/myOrders"
+                android:icon="@drawable/my_order_icon"
+                android:title="Siparişlerim" />
+        </menu>
+    </item>
+    <item android:title="Destek">
+        <menu>
+            <item
+                android:id="@+id/faq"
+                android:icon="@drawable/menu_faq_icon"
+                android:title="Sık Sorulan Sorular" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/contact_icon"
+                android:title="Ara" />
+        </menu>
+    </item>
+    <item android:title="Diğer">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share_icon"
+                android:title="Paylaş" />
+            <item
+                android:id="@+id/rateApp"
+                android:icon="@drawable/rate_icon"
+                android:title="Oyla" />
+            <item
+                android:id="@+id/appInfo"
+                android:icon="@drawable/info_icon"
+                android:title="Uygulama Hakkında" />
+        </menu>
+    </item>
+</menu>
